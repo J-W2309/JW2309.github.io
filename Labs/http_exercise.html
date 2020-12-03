@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>http-exercise</title>
+   <meta charset="utf-8" />
+   <meta name="author" content="Jordan Weighell" />
+   <meta name="description" content="Http exercise" />
+</head>    
+    
+    
+    
+<body>    
+<h1>Hypertext Transfer Protocol (HTTP)</h1>
+
+
+<h2>What is the Hypertext Transfer Protocol (HTTP)</h2>
+
+<p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes.</p>
+
+<h2>Why is HTTP called a stateless protocol?</h2>
+
+<p>HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.</p>
+
+<h2>Describe the three phases of establishing a session using client-server protocols such as HTTP</h2>
+
+<ul>
+    <li> The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP). </li>
+    <li>The client sends its request, and waits for the answer. </li>
+    <li>The server processes the request, sending back its answer, providing a status code and appropriate data. </li>
+</ul>
+
+<h2> Describe the parameters on a get and post request </h2>
+
+<ul>
+    <li>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.</li>
+    <li>The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.</li>
+
+</ul>
+
+<h2>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h2>
+
+<p>HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:</p>
+
+<ul>
+    <li>Informational responses (100–199)</li>
+    <li>Successful responses (200–299)</li>
+    <li>Redirects (300–399)</li>
+    <li>Client errors (400–499)</li>
+    <li>Server errors (500–599)</li>
+</ul>
+
+<h2>What are HTTP cookies? Give an example.</h2>
+
+<p1>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with later requests to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol.</p1>
+
+<p> Cookies are mainly used for three purposes:</p>
+
+<ul>
+    <li>Session management Logins, shopping carts, game scores, or anything else the server should remember</li>
+    <li>Personalization User preferences, themes, and other settings</li>
+    <li> Tracking Recording and analyzing user behavior</li>
+</ul>
+
+<h2>Why are cookies a security issue?</h2>
+
+<p>Information should be stored in cookies with the understanding that all cookie values are visible to, and can be changed by, the end-user.</p>
+
+<h2>Describe session hijacking and XSS</h2>
+
+<p>Cross-site scripting (XSS) is a security exploit which allows an attacker to inject into a website malicious client-side code. This code is executed by the victims and lets the attackers bypass access controls and impersonate users.</p>
+
+<p>XSS attacks can be put into three categories: stored (also called persistent), reflected (also called non-persistent), or DOM-based.</p>
+
+<ul>
+    <Li>Stored XSS Attacks The injected script is stored permanently on the target servers. The victim then retrieves this malicious script from the server when the browser sends a request for data.</Li>
+    <Li>Reflected XSS Attacks When a user is tricked into clicking a malicious link, submitting a specially crafted form, or browsing to a malicious site, the injected code travels to the vulnerable website. The Web server reflects the injected script back to the user's browser, such as in an error message, search result, or any other response that includes data sent to the server as part of the request. The browser executes the code because it assumes the response is from a "trusted" server which the user has already interacted with.</Li>
+    <li>DOM-based XSS Attacks The payload is executed as a result of modifying the DOM environment (in the victim’s browser) used by the original client-side script. That is, the page itself does not change, but the client side code contained in the page runs in an unexpected manner because of the malicious modifications to the DOM environment.</li>
+</ul>
+
+<p>Session hijacking consists of gaining access to and misusing a user's authenticated session. This may happen by stealing a cookie for an existing session, or by fooling the user (or their browser) into setting a cookie with a predetermined session ID.</p>
+
+<h2>Describe Cross-site request forgery(CSRF)</h2>
+
+<p>CSRF (Cross-Site Request Forgery) is an attack that impersonates a trusted user and sends a website unwanted commands. This can be done, for example, by including malicious parameters in a URL behind a link that purports to go somewhere else</p>
+
+<h2>What are Cross-site HTTP requests (CORS) and what requests use CORS?</h2>
+
+<p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources.</p>
+
+<p>This cross-origin sharing standard can enable cross-site HTTP requests for:</p>
+
+<ul>
+    <li>Invocations of the XMLHttpRequest or Fetch APIs, as discussed above.</li>
+    <li>Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</li>
+    <li>WebGL textures.</li>
+    <li>Images/video frames drawn to a canvas using drawImage().</li>
+    <li>CSS Shapes from images.</li>
+</ul>
+
+
+<footer>
+
+<p> Information gathered from https://developer.mozilla.org/en-US/docs/Web/HTTP  </p>
+
+</footer>
+    
+    
+ </body>
+</html>
