@@ -19,6 +19,7 @@
 }
 #page > main {
   grid-area: main;
+  margin: 5px;
   background-color: beige;
 }
 #page > footer {
@@ -161,6 +162,11 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
+
+body {
+  background-color: beige;
+}
+
 /* Main */
 /* Footer */
 
