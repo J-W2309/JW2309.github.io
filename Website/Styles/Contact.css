@@ -19,13 +19,12 @@
 }
 #page > main {
   grid-area: main;
-  margin: 5px;
-  align-content: center;
-  text-align: center;
+  margin: 20px;
   background-color: beige;
 }
 #page > footer {
   grid-area: foot;
+  text-align: center;
   background-color: beige;
   border-top: 0.2vw solid black;
 }

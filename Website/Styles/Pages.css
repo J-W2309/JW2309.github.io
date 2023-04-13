@@ -19,13 +19,14 @@
 }
 #page > main {
   grid-area: main;
-  margin: 5px;
+  margin: 20px;
   background-color: beige;
   text-align: left;
   align-content: center;
 }
 #page > footer {
   grid-area: foot;
+  text-align: center;
   background-color: beige;
   border-top: 0.2vw solid black;
 }
@@ -82,6 +83,19 @@ nav ul.nav-bar > li.active {
 
 body {
   background-color: beige;
+
+}
+h3 {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+h4 {
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+  border-bottom: solid 1px #e1e1e1;
+    
 }
 
 /* Main */
