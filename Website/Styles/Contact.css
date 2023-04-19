@@ -21,6 +21,7 @@
   grid-area: main;
   margin: 20px;
   background-color: beige;
+  text-align: center;
 }
 #page > footer {
   grid-area: foot;
